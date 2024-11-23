@@ -1,0 +1,175 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #000;
+    color: white;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+/* Filter Section */
+aside.filter {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+aside h3, aside h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+aside input[type="range"] {
+    width: 100%;
+}
+
+aside .filter-price p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Product Catalogue Section */
+.catalogue {
+    flex: 3;
+}
+
+.catalogue h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    
+}
+.product-card img:hover {
+    transform: scale(1.2);
+
+}
+
+.product-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.product-card .button {
+    background-color: #FFCB05;
+    color: #111;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.product-card .button:hover {
+    background-color: #e1b600;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .filter {
+        width: 100%;
+    }
+}

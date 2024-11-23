@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Premier Gold Catalogue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logomain.png" alt="Premier Gold Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="premiergold.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Filter Section -->
+        <aside class="filter">
+            <h3>Filter By</h3>
+            <div class="filter-category">
+                <h4>Category</h4>
+                <ul>
+                    <li><input type="checkbox" id="Tite" name="category" value="Tite"> <label for="Tite">Tite</label></li>
+                    <li><input type="checkbox" id="Lower" name="category" value="Lower"> <label for="Lower">Lower</label></li>
+                    <li><input type="checkbox" id="Sando" name="category" value="Sando"> <label for="Sando">Sando</label></li>
+                    <li><input type="checkbox" id="Tracksuit" name="category" value="Tracksuit"> <label for="Tracksuit">Tracksuit</label></li>
+                    <li><input type="checkbox" id="Jacket" name="category" value="Jacket"> <label for="Jacket">Jacket</label></li>
+                </ul>
+            </div>
+            <div class="filter-price">
+                <h4>Price Range</h4>
+                <input type="range" id="price" name="price" min="0" max="500" step="10">
+                <p>Price: Rs.<span id="price-value">50</span></p>
+            </div>
+        </aside>
+
+        <!-- Product Catalogue -->
+        <section class="catalogue">
+            <h2>Premier Gold Collection</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="men sando.png" alt="men sando">
+                    <h3>Men Sando</h3>
+                    <p>Rs.999</p>
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="trend.png" alt="trend">
+                    <h3>Men's Vest</h3>
+                    <p>Rs.499</p>
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="Workout men sando.png" alt="Workout Sando">
+                    <h3>Workout Vest</h3>
+                    <p>Rs.999</p>
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="white tracksuit.png" alt="White tracksuit">
+                    <h3>Solid strips Women Tracksuit</h3>
+                    <p>Rs.4999</p>
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="tracksuitmen.png" alt="Men tracksuit">
+                    <h3>NS Tracksuit</h3>
+                    <p>Rs.3999</p>
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="strip tracksuit.png" alt="Solid strip  tracksuit">
+                    <h3>Solid strips black Tracksuit</h3>
+                    <p>Rs.2999</p>
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="kabadi tites.png" alt="Kabadi tite">
+                    <h3>Kabadi Tite</h3>
+                    <p>Rs.999</p>
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="strechable tights for women.png" alt="Strechable tite">
+                    <h3>Strechable Tite</h3>
+                    <p>Rs.499</p>
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="Running split shorts.png" alt="Running split shorts">
+                    <h3>Running Split Shorts</h3>
+                    <p>Rs.449</p>
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="lycra Trackpant.png" alt="lycra trackpant">
+                    <h3>Lycra Trackpant</h3>
+                    <p>Rs.999</p>
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="trackpant.png" alt="trackpant">
+                    <h3>Women Jogger</h3>
+                    <p>Rs.899</p>
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+                <div class="product-card">
+                    <img src="solidtrackpant.png" alt="solid track pant">
+                    <h3>Solid Grey Trackpant</h3>
+                    <p>Rs.799</p>
+                    <a href="#" class="button">Add to Cart</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Premier Gold. All Rights Reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Simple price range update
+        document.getElementById('price').addEventListener('input', function (e) {
+            document.getElementById('price-value').textContent = e.target.value;
+        });
+    </script>
+
+</body>
+
+</html>
